@@ -35,10 +35,10 @@ Examples of RMT time series.
 ### (1). Graph Structure of Road Section Network
 As the implementation is based on pre-calculated distances between road sections, we provided the CSV file with road section distances and IDs in the following link: [Road Section Distance](https://drive.google.com/file/d/1T4SAfwdLSAtR6hcPL-BmHzbEjdtlJEfc/view?usp=share_link). To generate the Graph Structure based on the "Road Section Distance" file provided above, please execute the [script](https://github.com/liyaguang/DCRNN/blob/master/scripts/gen_adj_mx.py). 
 
-The Graph Structure of the Road Section Network used in experiments is provided in the following link: [Graph Structure of Road Section Network](https://drive.google.com/file/d/1pWSCuEsGLT93ggR3asCeOVuuX5btliOR/view?usp=share_link)   
+The Graph Structure of the Road Section Network used in experiments is provided in the following link: [Google Drive](https://drive.google.com/file/d/1pWSCuEsGLT93ggR3asCeOVuuX5btliOR/view?usp=share_link)   
 
 ### (2). The Processed RMT dataset
-The original csv file of RMT dataset are available at [RMT_2022_nodes_11.csv](https://drive.google.com/file/d/13ngpCDl27PQh9kkbj5OUtgy3bamOUWae/view?usp=share_link). Here are the part examples:
+The original csv file of RMT dataset are available at [Google Drive](https://drive.google.com/file/d/13ngpCDl27PQh9kkbj5OUtgy3bamOUWae/view?usp=share_link). Here are the part examples:
 
 |                     | Road Section 1 | Road Section 2 | Road Section 3 | ... | Road Section N |
 |:-------------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
@@ -52,16 +52,16 @@ The original csv file of RMT dataset are available at [RMT_2022_nodes_11.csv](ht
 
 To generate train/test/val dataset as  `{train,val,test}.npz` for the experiments, please follow the reference [script](https://github.com/liyaguang/DCRNN/blob/master/scripts/generate_training_data.py)
 
-The processed train/val/test data structures are available at: [train/test/val data](https://drive.google.com/drive/folders/13ERd3wZFOe41RJ8CXyg_Q9U5XaS_HYrz?usp=share_link)
+The processed train/val/test data structures are available at: [Google Drive](https://drive.google.com/drive/folders/13ERd3wZFOe41RJ8CXyg_Q9U5XaS_HYrz?usp=share_link)
 
 ### (3). Feature Augmentation
 We adopted our proposed Feature Augmentation to convert the univariate feature (e.g., traffic speed / Traffic Flow / RMT) into multivariate features with the linear and nonlinear components, enhancing the diversity of dataset.
 
-The linear and nonlinear components we employed are Mean Average and Geometric Average, provided at [Linear & Nonlinear Components](https://drive.google.com/drive/folders/1NrRM7VW48XgOVr9dV2hW4thh5VR1XqdF?usp=share_link). 
+The linear and nonlinear components we employed are Mean Average and Geometric Average, provided at: [Google Drive](https://drive.google.com/drive/folders/1NrRM7VW48XgOVr9dV2hW4thh5VR1XqdF?usp=share_link). 
 
 ### (4). The data of Hashed Table
 
-We will provide the hashed cellular traffic in the following link: [Hashed Cellular Traffic](https://drive.google.com/drive/folders/15aN_zvN6qDEbpQBIIlQ7BBQOvwLoaqnq?usp=share_link)   
+We  provide the hashed cellular traffic in the following link: [Google Drive](https://drive.google.com/drive/folders/15aN_zvN6qDEbpQBIIlQ7BBQOvwLoaqnq?usp=share_link)   
 
 ## Urban Computing Applications
 
