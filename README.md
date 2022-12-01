@@ -4,9 +4,7 @@
 This is the RMT dataset used in VLDB'23 Vol16 (Model Codes are in the ./Model). 
 This prototypical dataset cooperated with [Chunghwa Telecom Company](https://www.cht.com.tw/en/home/cht), the largest telecommunication company in Taiwan with over 10 million mobile subscribers and accounted for over 50% population.
 
-## Background of RMT(Road Mobile Traffic)
-
-### RMT Definition
+## RMT(Road Mobile Traffic) Definition
 RMT is defined as the accumulated quantity of cellular traffic in a time interval within a road section, which can reflect crowdedness in a region.
 
 We collected cellular traffic from Chunghwa Telecom's cellular traffic storage database, which received and stored over 2 billion daily mobile user cellular traffic records.
