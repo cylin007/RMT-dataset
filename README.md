@@ -22,15 +22,15 @@ We proposed a new spatial-temporal dataset, the RMT Dataset, consisting of RMT t
 These road sections are geographically connected to constitute a network, generating more spatial correlations. 
 Hence, RMT Dataset combines the mobility of mobile users into road section topology, resulting in more spatial-temporal potential.
 
-### Spatial Information
+### Spatial Property
 Road Sections in Hsinchu City, Taiwan.
 ![RMT-dataset](./Figure/rmt_road_sections.png "Sections")
 
-### Temporal Information
+### Temporal Property
 Examples of RMT time series.
 ![RMT-dataset](./Figure/rmt_time_distribution.png "RMT")
 
-## Dataset Providing
+## Supplemental Material Providing
 
 ### (1). Graph Structure of Road Section Network
 As the implementation is based on pre-calculated distances between road sections, we provided the CSV file with road section distances and IDs in the following link: [Road Section Distance](https://drive.google.com/file/d/1T4SAfwdLSAtR6hcPL-BmHzbEjdtlJEfc/view?usp=share_link). To generate the Graph Structure based on the "Road Section Distance" file provided above, please execute the [script](https://github.com/liyaguang/DCRNN/blob/master/scripts/gen_adj_mx.py). 
