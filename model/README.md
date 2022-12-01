@@ -29,8 +29,6 @@ The linear and nonlinear components can be calculated mathematically based on th
 
 We also provided the processed linear and nonlinear components as train/val/test datasets in the link: [Google Drive](https://drive.google.com/drive/folders/1NrRM7VW48XgOVr9dV2hW4thh5VR1XqdF?usp=share_link)
 
-Please put all datasets in the following location: ../Data/RMThsin
-
 ## Graph Construction
 As the implementation is based on pre-calculated distances between road sections, we provided the CSV file with road section distances and IDs in the following link: [Road Section Distance](https://drive.google.com/file/d/1T4SAfwdLSAtR6hcPL-BmHzbEjdtlJEfc/view?usp=share_link). 
 
