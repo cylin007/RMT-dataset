@@ -6,8 +6,8 @@
 This is a Pytorch implementation of Graph Multichannel Attention Neural Network for VLDB'23
 
 ## Data Preparation
-The original RMT data files, i.e., `RMT_2022_nodes_11.csv`, are available at [Google Drive](https://drive.google.com/drive/folders/1kI1dNpAljk0C2WQdOdn2vCJazdWzN9Ny?usp=sharing), and should be
-put into the `../Data/RMThsin` folder.
+The original RMT data files, i.e., `RMT_2022_nodes_11.csv`, are available at [Google Drive](https://drive.google.com/drive/folders/1kI1dNpAljk0C2WQdOdn2vCJazdWzN9Ny?usp=sharing)
+
 Here is an example:
 
 |                     | Road Section 1 | Road Section 2 | Road Section 3 | ... | Road Section N |
