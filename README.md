@@ -17,10 +17,12 @@ We proposed a new spatial-temporal dataset, the RMT Dataset, consisting of RMT t
 These road sections are geographically connected to constitute a network, generating more spatial correlations. 
 Hence, RMT Dataset combines the mobility of mobile users into road section topology, resulting in more spatial-temporal potential.
 
-### Spatial Information: Road Sections in Hsinchu City, Taiwan
+### Spatial Information
+Road Sections in Hsinchu City, Taiwan.
 ![RMT-dataset](./Figure/rmt_road_sections.png "Sections")
 
-### Temporal Information: Examples of RMT time series
+### Temporal Information
+Examples of RMT time series.
 ![RMT-dataset](./Figure/rmt_time_distribution.png "RMT")
 
 ## Dataset Providing
@@ -52,7 +54,7 @@ We adopted our proposed Feature Augmentation to convert the univariate feature (
 
 The linear and nonlinear components we employed are Mean Average and Geometric Average, provided at [Linear & Nonlinear Components](https://drive.google.com/drive/folders/1NrRM7VW48XgOVr9dV2hW4thh5VR1XqdF?usp=share_link). 
 
-### (4). The data of Hashed Table (* Waiting for the information security inspection process.)
+### (4). The data of Hashed Table
 
 We will provide the hashed cellular traffic in the following link: [Hashed Cellular Traffic](https://drive.google.com/drive/folders/15aN_zvN6qDEbpQBIIlQ7BBQOvwLoaqnq?usp=share_link)   
 
