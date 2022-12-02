@@ -38,8 +38,11 @@ The processed Graph Structure of Road Section Network, i.e., `adj_mat_RMThsin.pk
 
 ## Model Training
 
-Each part of the model code is provided above. 
+The code for each part of the framework architecture is provided above.
 
-Please run the `Jupyter Notebook` for model training, including `GMAT-Net` and `GMAT-Uni` (i.e., with univariate input). 
+Please set the location of the dataset and graph structure file in `argparse.ArgumentParser()` of `parameters.py`
 
-For the location of the dataset and graph structure files, please set the `argparse.ArgumentParser()` in the code.
+And put all codes together to run the training process.
+
+Or run the `Jupyter Notebook` for model training, including `GMAT-Net` and `GMAT-Uni` (i.e., with univariate output).
+
