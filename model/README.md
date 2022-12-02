@@ -1,5 +1,5 @@
 
-# Experimental Model Code for: Graph Multichannel Attention Neural Network (GMAT-Net)
+# Experimental Code for: Graph Multichannel Attention Neural Network (GMAT-Net)
 
 ![RMT-dataset](../Figure/gmat_net.png "Model Architecture")
 
@@ -20,21 +20,26 @@ Here is an example:
 |         ...         |    ...         |    ...         |    ...         |    ...         |    ...         |
 | 2022-03-31 23:55:00 |   54.0        |   9.0        |   51.0        |    ...         |    38.0         |
 
+### train/test/val dataset
 
 Run the [scripts](https://github.com/liyaguang/DCRNN/blob/master/scripts/generate_training_data.py) to generate the train/test/val dataset.
 
-We provided the processed train/val/test datasets in the link: [Google Drive](https://drive.google.com/drive/folders/13ERd3wZFOe41RJ8CXyg_Q9U5XaS_HYrz?usp=share_link)
+We provided `the processed train/val/test datasets` in the link: [Google Drive](https://drive.google.com/drive/folders/13ERd3wZFOe41RJ8CXyg_Q9U5XaS_HYrz?usp=share_link)
 
-The linear and nonlinear components can be calculated mathematically based on the original RMT data file: [RMT_2022_nodes_11.csv](https://drive.google.com/drive/folders/1kI1dNpAljk0C2WQdOdn2vCJazdWzN9Ny?usp=sharing), and then processed by the [script](https://github.com/liyaguang/DCRNN/blob/master/scripts/generate_training_data.py) to generate datasets.
+### train/test/val of Feature Augmentation
 
-We also provided the processed linear and nonlinear components as train/val/test datasets in the link: [Google Drive](https://drive.google.com/drive/folders/1NrRM7VW48XgOVr9dV2hW4thh5VR1XqdF?usp=share_link)
+The linear and nonlinear components of Feature Augmentation can be calculated mathematically (i.e., 'Mean Average' and 'Geometric Average') with the original RMT data file: [RMT_2022_nodes_11.csv](https://drive.google.com/drive/folders/1kI1dNpAljk0C2WQdOdn2vCJazdWzN9Ny?usp=sharing)
+
+Then run the same [script](https://github.com/liyaguang/DCRNN/blob/master/scripts/generate_training_data.py) to generate datasets.
+
+We also provided `the processed linear and nonlinear components` as train/val/test datasets in the link: [Google Drive](https://drive.google.com/drive/folders/1NrRM7VW48XgOVr9dV2hW4thh5VR1XqdF?usp=share_link)
 
 ## Graph Construction
 As the implementation is based on pre-calculated distances between road sections, we provided the CSV file with road section distances and IDs in the following link: [Road Section Distance](https://drive.google.com/file/d/1T4SAfwdLSAtR6hcPL-BmHzbEjdtlJEfc/view?usp=share_link). 
 
 Run the [script](https://github.com/liyaguang/DCRNN/blob/master/scripts/gen_adj_mx.py) to generate the Graph Structure based on the "Road Section Distance" file provided above.
 
-The processed Graph Structure of Road Section Network, i.e., `adj_mat_RMThsin.pkl`, are available at: [Google Drive](https://drive.google.com/file/d/1pWSCuEsGLT93ggR3asCeOVuuX5btliOR/view?usp=share_link)   
+The `processed Graph Structure of Road Section Network`, i.e., `adj_mat_RMThsin.pkl`, are available at: [Google Drive](https://drive.google.com/file/d/1pWSCuEsGLT93ggR3asCeOVuuX5btliOR/view?usp=share_link)   
 
 ## Model Training
 
