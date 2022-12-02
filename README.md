@@ -95,7 +95,7 @@ We hope these archives will lead to more promising potentials for urban computin
 
 In our work, we demonstrated the relationship between average speed and RMT and used Pearson coefficient analysis to verify the negative correlation characteristics of the two.
 
-This can be extended to an indicator of transportation, such as confirming traffic congestion, etc.
+This can be extended to the indicators of transportation, such as determining traffic congestion.
 
 <img src="./Figure/spatial_correlation_and_pearson.png" alt="spatial_correlation_and_pearson" width=70%/>
 
