@@ -7,7 +7,7 @@ This prototypical dataset cooperated with [Chunghwa Telecom Company](https://www
 
 ## Overview
 This is the overall process of the new spatial-temporal task and dataset.
-<img src="./Figure/fig_rmt_overview.png" alt="overview" width=70%/>
+<img src="./Figure/fig_rmt_overview.png" alt="overview" width=80%/>
 
 ## RMT(Road Mobile Traffic) Definition
 RMT is defined as the accumulated quantity of cellular traffic in a time interval within a road section, which can reflect crowdedness in a region.
@@ -24,11 +24,11 @@ Hence, RMT Dataset combines the mobility of mobile users into road section topol
 
 ### Spatial Property
 Road Sections in Hsinchu City, Taiwan.
-<img src="./Figure/rmt_road_sections.png" alt="Sections" width=70%/>
+<img src="./Figure/rmt_road_sections.png" alt="Sections" width=50%/>
 
 ### Temporal Property
 Examples of RMT time series.
-<img src="./Figure/rmt_time_distribution.png" alt="RMT" width=70%/>
+<img src="./Figure/rmt_time_distribution.png" alt="RMT" width=50%/>
 
 ## Supplemental Material Providing
 
