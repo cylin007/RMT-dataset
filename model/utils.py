@@ -133,20 +133,6 @@ class StandardScaler():
         return (data - self.mean) / self.std
     def inverse_transform(self, data):
         return (data * self.std) + self.mean
-'''
-
-class StandardScaler():
-    """
-    Standard the input
-    """
-    def __init__(self, max, min):
-        self.max = max
-        self.min = min
-    def transform(self, data):
-        return (data - self.min) / (self.max - self.min)
-    def inverse_transform(self, data):
-        return (data * (self.max - self.min) ) + self.min
-'''
 
 def asym_adj(adj):
     """Asymmetrically normalize adjacency matrix."""
@@ -173,16 +159,7 @@ def load_pickle(pickle_file):
 def load_adj(pkl_filename, adjtype):
     sensor_ids, sensor_id_to_ind, adj_mx = load_pickle(pkl_filename)
 
-    print('# 全部L.A.的sensor ID(sensor_ids):\n',sensor_ids)
-    print('# 將sensor ID對應index(sensor_id_to_ind):\n',sensor_id_to_ind)
-    
-    if adjtype == "scalap":
-        adj = [calculate_scaled_laplacian(adj_mx)]
-    elif adjtype == "normlap":
-        adj = [calculate_normalized_laplacian(adj_mx).astype(np.float32).todense()]
-    elif adjtype == "symnadj":
-        adj = [sym_adj(adj_mx)]
-    elif adjtype == "transition":
+    if adjtype == "transition":
         adj = [asym_adj(adj_mx)]
     elif adjtype == "doubletransition":
         adj = [asym_adj(adj_mx), asym_adj(np.transpose(adj_mx))]   # asym_adj(adj_mx): forward transition matrix / asym_adj(np.transpose(adj_mx)): backward transition matrix
@@ -212,8 +189,6 @@ def load_dataset(dataset_dir, batch_size, valid_batch_size= None, test_batch_siz
     # 將欲訓練特徵改成正規化
     for category in ['train', 'val', 'test']:
         data['x_' + category][..., 0] = scaler.transform(data['x_' + category][..., 0])
-
-    
 
     data['train_loader'] = DataLoaderM(data['x_train'], data['y_train'], batch_size)
     data['val_loader'] = DataLoaderM(data['x_val'], data['y_val'], valid_batch_size)
