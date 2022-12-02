@@ -1,15 +1,13 @@
 
-# Supplemental Material for VLDB'23 Vol. 16
+# RMT-dataset for VLDB'23 Vol. 16
 
-This is the original RMT dataset used in VLDB'23 Vol16. All Supplemental Materials are provided in the following.
+This is the RMT dataset used in VLDB'23 Vol16 (Model Codes will be made public after the inspection of Chunghwa Telecom). 
 
 This prototypical dataset cooperated with [Chunghwa Telecom Company](https://www.cht.com.tw/en/home/cht), the largest telecommunication company in Taiwan with over 10 million mobile subscribers and accounted for over 50% population.
 
-Experimental Model Codes are provided in ./model
-
 ## Overview
 This is the overall process of the new spatial-temporal task and dataset.
-![RMT-dataset](./Figure/fig_rmt_overview.png "overview")
+<img src="./Figure/fig_rmt_overview.png" alt="overview" width=70%/>
 
 ## RMT(Road Mobile Traffic) Definition
 RMT is defined as the accumulated quantity of cellular traffic in a time interval within a road section, which can reflect crowdedness in a region.
@@ -26,11 +24,11 @@ Hence, RMT Dataset combines the mobility of mobile users into road section topol
 
 ### Spatial Property
 Road Sections in Hsinchu City, Taiwan.
-<img src="./Figure/rmt_road_sections.png" alt="Sections" width=50%/>
+<img src="./Figure/rmt_road_sections.png" alt="Sections" width=70%/>
 
 ### Temporal Property
 Examples of RMT time series.
-![RMT-dataset](./Figure/rmt_time_distribution.png "RMT")
+<img src="./Figure/rmt_time_distribution.png" alt="RMT" width=70%/>
 
 ## Supplemental Material Providing
 
@@ -55,6 +53,9 @@ The original csv file of RMT dataset are available at [Google Drive](https://dri
 To generate train/test/val dataset as  `{train,val,test}.npz` for the experiments, please follow the reference [script](https://github.com/liyaguang/DCRNN/blob/master/scripts/generate_training_data.py)
 
 The processed train/val/test data structures are available at: [Google Drive](https://drive.google.com/drive/folders/13ERd3wZFOe41RJ8CXyg_Q9U5XaS_HYrz?usp=share_link)
+
+The linear and nonlinear components can be calculated mathematically based on the original RMT data file: [RMT_2022_nodes_11.csv](https://drive.google.com/drive/folders/1kI1dNpAljk0C2WQdOdn2vCJazdWzN9Ny?usp=sharing), and then processed by the [script](https://github.com/liyaguang/DCRNN/blob/master/scripts/generate_training_data.py) to generate datasets.
+
 
 ### (3). Feature Augmentation
 We adopted our proposed Feature Augmentation to convert the univariate feature (e.g., traffic speed / Traffic Flow / RMT) into multivariate features with the linear and nonlinear components, enhancing the diversity of dataset.
