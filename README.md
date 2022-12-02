@@ -1,9 +1,12 @@
+# Supplemental Material Providing for VLDB'23 Vol. 16
 
-# RMT-dataset for VLDB'23 Vol. 16
-
-This is the RMT dataset used in VLDB'23 Vol16 (Model Codes will be made public after the inspection of Chunghwa Telecom). 
+This is the original Supplemental Material for VLDB'23 Vol16.
 
 This prototypical dataset cooperated with [Chunghwa Telecom Company](https://www.cht.com.tw/en/home/cht), the largest telecommunication company in Taiwan with over 10 million mobile subscribers and accounted for over 50% population.
+
+The dataset materials are provided in the following.
+
+The experimental model codes are provided in: `./model`
 
 ## Overview
 This is the overall process of the new spatial-temporal task and dataset.
