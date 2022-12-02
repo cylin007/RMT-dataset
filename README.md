@@ -26,7 +26,7 @@ Hence, RMT Dataset combines the mobility of mobile users into road section topol
 
 ### Spatial Property
 Road Sections in Hsinchu City, Taiwan.
-![RMT-dataset](./Figure/rmt_road_sections.png width=50% "Sections")
+<img src="./Figure/rmt_road_sections.png" alt="Sections" width=50%/>
 
 ### Temporal Property
 Examples of RMT time series.
