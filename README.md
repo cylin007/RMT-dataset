@@ -1,9 +1,11 @@
 
-# RMT-dataset for VLDB'23 Vol. 16
+# Supplemental Material for VLDB'23 Vol. 16
 
-This is the RMT dataset used in VLDB'23 Vol16 (Model Codes will be made public after the inspection of Chunghwa Telecom). 
+This is the original RMT dataset used in VLDB'23 Vol16. All Supplemental Materials are provided in the following.
 
 This prototypical dataset cooperated with [Chunghwa Telecom Company](https://www.cht.com.tw/en/home/cht), the largest telecommunication company in Taiwan with over 10 million mobile subscribers and accounted for over 50% population.
+
+Experimental Model Codes are provided in ./model
 
 ## Overview
 This is the overall process of the new spatial-temporal task and dataset.
@@ -24,7 +26,7 @@ Hence, RMT Dataset combines the mobility of mobile users into road section topol
 
 ### Spatial Property
 Road Sections in Hsinchu City, Taiwan.
-![RMT-dataset](./Figure/rmt_road_sections.png "Sections")
+![RMT-dataset](./Figure/rmt_road_sections.png width=50% "Sections")
 
 ### Temporal Property
 Examples of RMT time series.
