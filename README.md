@@ -54,13 +54,16 @@ To generate train/test/val dataset as  `{train,val,test}.npz` for the experiment
 
 The processed train/val/test data structures are available at: [Google Drive](https://drive.google.com/drive/folders/13ERd3wZFOe41RJ8CXyg_Q9U5XaS_HYrz?usp=share_link)
 
-The linear and nonlinear components can be calculated mathematically based on the original RMT data file: [RMT_2022_nodes_11.csv](https://drive.google.com/drive/folders/1kI1dNpAljk0C2WQdOdn2vCJazdWzN9Ny?usp=sharing), and then processed by the [script](https://github.com/liyaguang/DCRNN/blob/master/scripts/generate_training_data.py) to generate datasets.
 
 
 ### (3). Feature Augmentation
-We adopted our proposed Feature Augmentation to convert the univariate feature (e.g., traffic speed / Traffic Flow / RMT) into multivariate features with the linear and nonlinear components, enhancing the diversity of dataset.
+We adopted our proposed Feature Augmentation to convert the univariate feature (e.g., traffic speed / Traffic Flow / RMT) into multivariate features with the linear and nonlinear components, enhancing the diversity of dataset. 
 
-The linear and nonlinear components we employed are Mean Average and Geometric Average, provided at: [Google Drive](https://drive.google.com/drive/folders/1NrRM7VW48XgOVr9dV2hW4thh5VR1XqdF?usp=share_link). 
+The linear and nonlinear components we employed are Mean Average and Geometric Average respectively.
+
+The linear and nonlinear components can be calculated mathematically based on the original RMT data file: [RMT_2022_nodes_11.csv](https://drive.google.com/drive/folders/1kI1dNpAljk0C2WQdOdn2vCJazdWzN9Ny?usp=sharing), and then processed by the [script](https://github.com/liyaguang/DCRNN/blob/master/scripts/generate_training_data.py) to generate datasets.
+
+We provided the linear and nonlinear components dataset at: [Google Drive](https://drive.google.com/drive/folders/1NrRM7VW48XgOVr9dV2hW4thh5VR1XqdF?usp=share_link). 
 
 ### (4). The data of Hashed Table
 
