@@ -49,5 +49,5 @@ Please set the location of the dataset and graph structure file in `argparse.Arg
 
 And put all codes together to run the training process.
 
-Or run the `Jupyter Notebook` for model training, including `GMAT_Net.ipynb` and `GMAT_Uni.ipynb` (i.e., with univariate output).
+Or run the `Jupyter Notebook` for model training with `GMAT_Net.ipynb` and `GMAT_Uni.ipynb`(i.e., with univariate input).
 
