@@ -11,7 +11,7 @@ class Trainer():
         self.task_level = 1
         self.seq_out_len = seq_out_len
         self.cl = cl
-
+  
     def train(self, input, input_1, input_2, input_3, input_4 ,real_val, idx=None):
         self.model.train()
         self.optimizer.zero_grad()

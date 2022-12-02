@@ -1,4 +1,4 @@
-
+ 
 class S_GMAT_base(nn.Module):
     def __init__(self, n_heads, in_channel, num_nodes, dropout, bias=True):
         super(S_GMAT_base, self).__init__()

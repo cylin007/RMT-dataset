@@ -14,7 +14,7 @@ for range_type in ['','ma3','ma6','ga12','ga24']:
           category = category
           key = category
         else:
-
+ 
           key = category + "_" + str(feature_id)
           category = category + "_" + range_type
 

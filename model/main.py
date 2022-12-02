@@ -15,7 +15,7 @@ def main(runid):
                    out_dim=args.seq_out_len,
                    layers=args.layers,
                    layer_norm_affline=True)
-
+ 
     print(model)
     nParams = sum([p.nelement() for p in model.parameters()])       # model參數量!
 

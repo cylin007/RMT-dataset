@@ -159,7 +159,16 @@ def load_pickle(pickle_file):
 def load_adj(pkl_filename, adjtype):
     sensor_ids, sensor_id_to_ind, adj_mx = load_pickle(pkl_filename)
 
-    if adjtype == "transition":
+    print('# 全部L.A.的sensor ID(sensor_ids):\n',sensor_ids)
+    print('# 將sensor ID對應index(sensor_id_to_ind):\n',sensor_id_to_ind)
+    
+    if adjtype == "scalap":
+        adj = [calculate_scaled_laplacian(adj_mx)]
+    elif adjtype == "normlap":
+        adj = [calculate_normalized_laplacian(adj_mx).astype(np.float32).todense()]
+    elif adjtype == "symnadj":
+        adj = [sym_adj(adj_mx)]
+    elif adjtype == "transition":
         adj = [asym_adj(adj_mx)]
     elif adjtype == "doubletransition":
         adj = [asym_adj(adj_mx), asym_adj(np.transpose(adj_mx))]   # asym_adj(adj_mx): forward transition matrix / asym_adj(np.transpose(adj_mx)): backward transition matrix
@@ -189,6 +198,8 @@ def load_dataset(dataset_dir, batch_size, valid_batch_size= None, test_batch_siz
     # 將欲訓練特徵改成正規化
     for category in ['train', 'val', 'test']:
         data['x_' + category][..., 0] = scaler.transform(data['x_' + category][..., 0])
+
+    
 
     data['train_loader'] = DataLoaderM(data['x_train'], data['y_train'], batch_size)
     data['val_loader'] = DataLoaderM(data['x_val'], data['y_val'], valid_batch_size)
