@@ -72,7 +72,7 @@ class F_GMAT_module(nn.Module):
             self.mlp_convs2.append(nn.Conv2d(last_channel, out_channel, 1))
             last_channel = out_channel
 
-        self.lay_norm2 = nn.LayerNorm([n_heads,5, num_nodes])
+        self.lay_norm2 = nn.LayerNorm([32 ,5, num_nodes])
 
         self.dropout1 = nn.Dropout(0.3)
         self.dropout2 = nn.Dropout(0.6)
@@ -100,13 +100,13 @@ class F_GMAT_module(nn.Module):
             x_input = self.net(x_input)
             x_input = x_input_cpy2+ self.dropout1(x_input)
 
-            x_input = self.lay_norm2(x_input)
-            
             for i, conv in enumerate(self.mlp_convs2):
               x_input = F.relu((conv(x_input)))
 
             x_input = x_input_cpy+ self.dropout2(x_input)
-
+            
+            x_input = self.lay_norm2(x_input)
+            
             x_all.append(x_input[:,:,0].unsqueeze(3))
             
             
