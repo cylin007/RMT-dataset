@@ -1,9 +1,9 @@
  
-class F_GMAT_base(nn.Module):
+class A_GMAT_base(nn.Module):
     def __init__(self, n_heads, in_channel, num_nodes, dropout, bias=True):
-        super(F_GMAT_base, self).__init__()
+        super(A_GMAT_base, self).__init__()
 
-        print('F_GMAT_base', n_heads, in_channel, num_nodes, dropout)
+        print('A_GMAT_base', n_heads, in_channel, num_nodes, dropout)
         self.n_head = n_heads
         self.f_in = num_nodes
         self.a_src = nn.Parameter(torch.Tensor(self.n_head, num_nodes, 1))
@@ -35,13 +35,13 @@ class F_GMAT_base(nn.Module):
         output = torch.matmul(attn, h_prime)
         return output + self.bias, attn
         
-class F_GMAT(nn.Module):
+class A_GMAT(nn.Module):
     def __init__(self, n_heads, in_channel, num_nodes, dropout, alpha):
-        super(F_GMAT, self).__init__()
+        super(A_GMAT, self).__init__()
         
         self.dropout = dropout
         
-        self.layer = F_GMAT_base(
+        self.layer = A_GMAT_base(
                     n_heads, in_channel, num_nodes, dropout
                 )
 
@@ -52,11 +52,11 @@ class F_GMAT(nn.Module):
         return x
 
 
-class F_GMAT_module(nn.Module):
+class A_GMAT_module(nn.Module):
     def __init__(self, n_heads, in_channel, num_nodes, mlp, mlp2, dropout, alpha):
-        super(F_GMAT_module, self).__init__()
-        print('F_GMAT_module', n_heads, in_channel, num_nodes, dropout, alpha)
-        self.net = F_GMAT(n_heads, in_channel, num_nodes, dropout, alpha)
+        super(A_GMAT_module, self).__init__()
+        print('A_GMAT_module', n_heads, in_channel, num_nodes, dropout, alpha)
+        self.net = A_GMAT(n_heads, in_channel, num_nodes, dropout, alpha)
 
         self.mlp_convs = nn.ModuleList()
         self.mlp_bns = nn.ModuleList()
